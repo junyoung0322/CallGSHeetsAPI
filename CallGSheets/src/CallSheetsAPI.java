@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class CallSheetsAPI {
 	public static void main(String[] args) {
 		try {
-			String sAPIKey = "APIKey";
+			String sAPIKey = "APIKey";	// API KEY
 			
 			StringBuilder sUrlString = new StringBuilder();
 			sUrlString.append("https://sheets.googleapis.com/v4/spreadsheets/") // API URL
@@ -15,7 +15,6 @@ public class CallSheetsAPI {
 			.append("/values/")
 			.append("sales!A1:E6") // 範囲
 			.append("?key=") // API Key パラメータ名
-			// APIキーに置き換えてください。
 			.append(sAPIKey); // API Key
 			
 			URL oUrl = new URL(sUrlString.toString());
